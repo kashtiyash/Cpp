@@ -1,3 +1,14 @@
+/*
+Desired o/p -   
+ 
+ * 
+ *  *       
+ *  *  *    
+ *  *  *  * 
+
+*/
+//Code
+
 #include<iostream>
 using namespace std;
 
@@ -15,13 +26,3 @@ int main()
 return 0;
 }
 
-/*
-o/p -   
- 
- * 
- *  *       
- *  *  *    
- *  *  *  * 
-
-
-*/
