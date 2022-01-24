@@ -1,44 +1,36 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
 int main()
 {
-        int arr1[3][3], i, j, arr2[3][3];
-        cout<<"\n Enter 3*3 Array Elements : \n";
-        for(i=0; i<3; i++)
-        {
-                for(j=0; j<3; j++)
-                {
-                        cout<<" ";
-                        cin>>arr1[i][j];
-                }
+    int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    
+    cout<<"\nGiven Matrix is : "<<endl;
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){    
+            cout<<arr[i][j]<<" ";
+            
         }
-        cout<<"\n Array Elements : \n";
-        for(i=0; i<3; i++)
+        cout<<endl;
+    }
+    for (int i=0;i<3;i++)
+    {
+        for(int j=i;j<3;j++)
         {
-                for(j=0; j<3; j++)
-                {
-                        cout<<" ";
-                        cout<<arr1[i][j]<<"\t";
-                }
-                cout<<"\n";
+            int temp = arr[i][j];
+            arr[i][j]= arr[j][i];
+            arr[j][i]=temp;
         }
-        for(i=0; i<3; i++)
-        {
-                for(j=0; j<3; j++)
-                {
-                        cout<<" ";
-                        arr2[i][j]=arr1[j][i];
-                }
+    }
+    
+    
+    cout<<"\nTranspose of  Matrix is : "<<endl;
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){    
+            cout<<arr[i][j]<<" ";
+            
         }
-        cout<<"\n\n Transpose of the Matrix is :\n";
-        for(i=0; i<3; i++)
-        {
-                for(j=0; j<3; j++)
-                {
-                        cout<<" ";
-                        cout<<arr2[i][j]<<"\t";
-                }
-                cout<<"\n";
-        }
-        return 0;
+        cout<<endl;
+    }
+    return 0;
 }
