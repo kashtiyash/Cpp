@@ -1,4 +1,4 @@
-//To get vowels,consonants ,digits and whitespaces from the string
+//This program gets vowels,consonants ,digits and whitespaces from the string
 #include<iostream>
 using namespace std;
 
