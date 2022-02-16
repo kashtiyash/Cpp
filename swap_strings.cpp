@@ -1,4 +1,4 @@
-/* C++ Program to Swap Two String using Third variable  */
+/* This Program  Swap Two String using Third variable  */
 
 #include<iostream>
 using namespace std;
